@@ -31,17 +31,16 @@
 		<p>PyCode is a combination of Developer Tools for JavaScript and Developer Tools for Python. It allows you to run and embed Python
 		code into a webpage, like this:
 			<pre>
-				&gt;!DOCTYPE html&lt;
-				&gt;html&lt;
-					&gt;head&lt;
-						&gt;title&lt;Example&gt;/title&lt
-					&gt;/head&lt;
-					&gt;body&lt;
-						&gt;%python%
-							&gt;p&lt;Hello!<p&lt;
-							&gt;p&lt;This code was printed using Python!&gt;/p&lt;
-						%&lt;
-					&gt;/body&lt;
-				&gt;/html&lt;
+				&lt;%python%
+					&lt;p&gt;This was printed with Python!&lt;p&gt;
+				%&gt;
 			</pre>
-			
+		Running that code would display:
+			<div class='code-snippet-output'>
+				<p>This was printed with Python!</p>
+			</div>
+		It also contains a Python Shell, JavaScript shell, File I/O manager(for when the code tries to use it), and all kinds
+		of other features. PyCode also works seamlessly with Pithos, allowing it to read files outside of the virtual file
+		file system.</p>
+	</body>
+</html>
